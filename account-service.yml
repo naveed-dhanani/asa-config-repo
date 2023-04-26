@@ -1,0 +1,47 @@
+logging:
+  level:
+    root: INFO
+    com:
+      fedex: INFO
+
+spring:
+  application:
+    name: account-service
+  flyway:
+    enabled: false
+  main:
+    allow-bean-definition-overriding: true
+  mvc: 
+    throw-exception-if-no-handler-found: true
+  web: 
+    resources: 
+      add-mappings: false
+  profiles:
+    active: local
+    
+management:
+  endpoints:
+    web:
+      exposure:
+        include: info, health, refresh, configprops
+        
+info:
+  app:
+    name: account-service
+    description: FedEx-OnDemand - Account Service
+    
+# this needs to be in the common application properties
+swagger: 
+  service: 
+    contact: 
+      email: CAVS@fedex.com
+      name: "FedEx OnDemand Development Team"
+      url: "https://fedex.com/"
+    description: "This service is used for handling logic with the FedEx-OnDemand Account Service. Anything that need to be done on the Site/Customer resources is supported in this API REST Serive."
+    license: 
+      url: "https://fedex.com/licence"
+    name: "FOD Account Service API"
+    tos: 
+      url: "https://cavs.fexdex.com/termsofuse"
+    version: v1
+    group: CAVS Open Api Group
