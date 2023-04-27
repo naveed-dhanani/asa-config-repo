@@ -62,7 +62,7 @@ google:
     
 vehicle: 
   service:
-    endpoint: https://vehicle-service-dev.cfapps.scus-10.test.cf.fedex.com
+    endpoint: https://fedexondemanddev.azure-api.net/v2/sim/vehicle
     
 roxo:
   ssl:
