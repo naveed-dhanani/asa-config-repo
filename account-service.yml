@@ -1,9 +1,3 @@
-logging:
-  level:
-    root: INFO
-    com:
-      fedex: INFO
-
 spring:
   application:
     name: account-service
@@ -30,7 +24,6 @@ info:
     name: account-service
     description: FedEx-OnDemand - Account Service
     
-# this needs to be in the common application properties
 swagger: 
   service: 
     contact: 
