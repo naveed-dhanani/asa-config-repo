@@ -6,7 +6,7 @@ logging:
       
 spring:
   datasource:
-    url: jdbc:sqlserver://fod-sql-dev.8ac16ee20438.database.windows.net:1433;database=fod-db;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.8ac16ee20438.database.windows.net;loginTimeout=30;
+    url: jdbc:sqlserver://fod-sql-dev.public.8ac16ee20438.database.windows.net:3342;database=fod-db;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.8ac16ee20438.database.windows.net;loginTimeout=30;
     username: ${AZ_SQL_USERNAME}
     password: ${AZ_SQL_PASSWORD}
   jms: 
